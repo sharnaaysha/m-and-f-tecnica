@@ -12,12 +12,14 @@
     <body>
         @include('inc.jumbotron')
         @include('inc.navbar')
+        @yield('content');
+        @include('inc.footer');
             
             
             
         <script src="{{asset('/js/jquery-3.4.0.js')}}"></script>  
-        <script src="{{asset('/js/popper.js')}}"></script>   
-        <script src="{{asset('/js/bootstrap.js')}}"></script>   
+        <script src="{{asset('/js/popper.js')}}"></script>  
+        <script src="{{asset('/js/bootstrap.js')}}"></script> 
     </body>
 
 </html>
